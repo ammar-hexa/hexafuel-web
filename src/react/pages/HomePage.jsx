@@ -264,7 +264,7 @@ function HomePage() {
               </h2>
               <p className="lead text-secondary mb-4">
                 Join hundreds of successful fuel station operators who have
-                transformed their business with FuelManager Pro.
+                transformed their business with HexaFuel.
               </p>
               <ul className="list-unstyled mb-4 fs-5">
                 <li className="mb-2">
