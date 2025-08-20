@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-const Navbar = () => {
+function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = (
@@ -52,17 +52,17 @@ const Navbar = () => {
       style={{ minHeight: 64 }}
     >
       <div className="container-fluid d-flex justify-content-between align-items-center">
-        <NavLink to="/" className="navbar-brand fw-bold text-primary fs-3">
+        <NavLink to="/" className="navbar-brand fw-bold text-dark fs-3">
           HexaFuel
         </NavLink>
         {/* Desktop nav + CTA */}
         <div className="d-none d-lg-flex gap-3 align-items-center">
           {navLinks}
-          <button className="btn btn-primary">Get a Free Demo</button>
+          <button className="btn btn-dark text-white">Get a Free Demo</button>
         </div>
         {/* Mobile hamburger + CTA */}
         <div className="d-flex d-lg-none align-items-center gap-2">
-          <NavLink to="/contact" className="btn btn-primary btn-sm">
+          <NavLink to="/contact" className="btn btn-dark btn-sm text-white">
             Get Demo
           </NavLink>
           <button
@@ -94,7 +94,7 @@ const Navbar = () => {
           </div>
           <NavLink
             to="/contact"
-            className="btn btn-primary btn-lg"
+            className="btn btn-dark btn-lg text-white"
             onClick={() => setMenuOpen(false)}
           >
             Get a Free Demo
@@ -103,6 +103,6 @@ const Navbar = () => {
       )}
     </nav>
   );
-};
+}
 
 export default Navbar;

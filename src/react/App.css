@@ -55,13 +55,15 @@
   opacity: 1; /* Firefox */
 }
 
-::-ms-input-placeholder { /* Edge 12-18 */
+::-ms-input-placeholder {
+  /* Edge 12-18 */
   color: rgba(0, 0, 0, 0.5) !important;
 }
 
-
 @media screen and (max-width: 576px) {
-  #features-background, #pricing-background, #contact-background {
+  #features-background,
+  #pricing-background,
+  #contact-background {
     display: none;
   }
 }

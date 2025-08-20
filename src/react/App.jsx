@@ -8,21 +8,19 @@ import PricingPage from "./pages/PricingPage";
 import ContactPage from "./pages/ContactPage";
 import "./App.css";
 
-const App = () => {
+function App() {
   return (
-    <div className="d-flex flex-column min-vh-100">
+    <>
       <Navbar />
-      {/* <main className="flex-1"> */}
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/features" element={<FeaturesPage />} />
-          <Route path="/pricing" element={<PricingPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-        </Routes>
-      {/* </main> */}
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/features" element={<FeaturesPage />} />
+        <Route path="/pricing" element={<PricingPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
       <Footer />
-    </div>
+    </>
   );
-};
+}
 
 export default App;
