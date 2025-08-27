@@ -194,27 +194,27 @@ function HomePage() {
                             </p>
                             <ul className="list-unstyled mb-4 fs-5">
                                 <li className="mb-2">
-                                    <span className="me-2 theme-colored-text">&#10003;</span>Reduce operational costs
+                                    <span className={`me-2 ${isColorTheme(theme) && "text-"+theme}`}>&#10003;</span>Reduce operational costs
                                     by up to 30%
                                 </li>
                                 <li className="mb-2">
-                                    <span className="me-2 theme-colored-text">&#10003;</span>Increase revenue through
+                                    <span className={`me-2 ${isColorTheme(theme) && "text-"+theme}`}>&#10003;</span>Increase revenue through
                                     data-driven decisions
                                 </li>
                                 <li className="mb-2">
-                                    <span className="me-2 theme-colored-text">&#10003;</span>Streamline inventory
+                                    <span className={`me-2 ${isColorTheme(theme) && "text-"+theme}`}>&#10003;</span>Streamline inventory
                                     management
                                 </li>
                                 <li className="mb-2">
-                                    <span className="me-2 theme-colored-text">&#10003;</span>Improve customer
+                                    <span className={`me-2 ${isColorTheme(theme) && "text-"+theme}`}>&#10003;</span>Improve customer
                                     satisfaction
                                 </li>
                                 <li className="mb-2">
-                                    <span className="me-2 theme-colored-text">&#10003;</span>Ensure regulatory
+                                    <span className={`me-2 ${isColorTheme(theme) && "text-"+theme}`}>&#10003;</span>Ensure regulatory
                                     compliance
                                 </li>
                                 <li className="mb-2">
-                                    <span className="me-2 theme-colored-text">&#10003;</span>Scale your business
+                                    <span className={`me-2 ${isColorTheme(theme) && "text-"+theme}`}>&#10003;</span>Scale your business
                                     efficiently
                                 </li>
                             </ul>
